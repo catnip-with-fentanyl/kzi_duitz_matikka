@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Operations</title>
+    <link rel="stylesheet" href="../style/matrix.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.0/math.min.js"></script>
+</head>
+<body>
+    <div class="matrix-container">
+        <div>
+            <h2>Matrix A</h2>
+            <div id="matrixA"></div>
+            <button onclick="addRow('A')">+ряд</button>
+            <button onclick="removeRow('A')">-ряд</button>
+            <button onclick="addColumn('A')">+стовпець</button>
+            <button onclick="removeColumn('A')">-стовпець</button>
+            <button onclick="transposeMatrix('A')">Транспонування</button>
+            <button onclick="calculateDeterminant('A')">Детермінант</button>
+        </div>
+        <div>
+            <h2>Matrix B</h2>
+            <div id="matrixB"></div>
+            <button onclick="addRow('B')">+ряд</button>
+            <button onclick="removeRow('B')">-ряд</button>
+            <button onclick="addColumn('B')">+стовпець</button>
+            <button onclick="removeColumn('B')">-стовпець</button>
+            <button onclick="transposeMatrix('B')">Транспонування</button>
+            <button onclick="calculateDeterminant('B')">Детермінант</button>
+        </div>
+    </div>
+    <div class="operations">
+        <button onclick="addMatrices()">A + B</button>
+        <button onclick="subtractMatrices()">A - B</button>
+        <button onclick="multiplyMatrices()">A * B</button>
+    </div>
+    <div id="resultContainer"></div>
+    <script src="../script/matrix.js"></script>
+</body>
+</html>

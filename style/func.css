@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+    margin-bottom: 5px;
+}
+
+#functionInput, #inputContainer, button, #analysisResults {
+    margin-left: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#functionInput {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+
+#analysisResults {
+    width: 600px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.katex-display {
+    width: 5%;
+}
+
